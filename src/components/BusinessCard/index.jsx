@@ -6,8 +6,10 @@ export default function BusinessCard({
     title = "这是网页的标题",
     signature = "这是你的签名",
     address = "这是你的地址",
-    phone = "这是你的电话",
-    email = "xxx@xxx.com",
+    qq = "",
+    wechat = "",
+    github = "",
+    email = "",
 }) {
     return (
         <>
@@ -16,9 +18,43 @@ export default function BusinessCard({
                 <p className="card-title">{title}</p>
                 <p className="card-signature">{signature}</p>
                 <div className="divider"></div>
-                <p className="card-address">{address}</p>
-                <p className="card-phone">{phone}</p>
-                <p className="card-email">{email}</p>
+                <div className="contact">
+                    <a
+                        className="iconfont icon-weixin card-contact"
+                        title={"wx: " + wechat}
+                    ></a>
+                    <a
+                        className="iconfont icon-github card-contact"
+                        title={"github: " + github}
+                        href={github}
+                    ></a>
+                    <a
+                        className="iconfont icon-email card-contact"
+                        title={"email: " + email}
+                        href={
+                            "Mailto:" +
+                            email +
+                            "?Subject=邮箱标题&amp;Body=邮箱内容！"
+                        }
+                    ></a>
+                    <a
+                        className="iconfont icon-qq card-contact"
+                        title={"qq: " + qq}
+                    ></a>
+                </div>
+                <div className="divider"></div>
+                <div className="info-box">
+                    <span className="info-title">毕业院校</span>
+                    <span className="info-content">华中科技大学</span>
+                </div>
+                <div className="info-box">
+                    <span className="info-title">所在城市</span>
+                    <span className="info-content">湖北 武汉</span>
+                </div>
+                <div className="info-box">
+                    <span className="info-title">年级</span>
+                    <span className="info-content">25届毕业生</span>
+                </div>
             </div>
         </>
     );

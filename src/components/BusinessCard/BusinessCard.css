@@ -25,6 +25,7 @@
 }
 
 .card-signature {
+    font-size: 0.85rem;
     font-weight: 100;
     text-align: center;
 }
@@ -33,6 +34,30 @@
 .divider {
     width: 80%;
     border-top: 1px dashed #b7b6b6;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-contact {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0 0.5rem;
+}
+
+.info-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 0.85rem;
+}
+
+.info-title {
+    /* font-weight: 900; */
+}
+
+.info-content {
+    color: #747474;
 }
