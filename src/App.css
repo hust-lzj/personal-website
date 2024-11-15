@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    letter-spacing: 2px;
 }
 
 .container {
@@ -17,11 +18,11 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 95%;
     height: 80%;
-    background-image: url("@/assets/images/bgpic.jpg");
+    background-image: url("@/assets/images/back/bgpic.webp");
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-attachment: fixed;
     border-radius: 0 0 16px 16px;
 }
@@ -29,7 +30,7 @@
 .content {
     position: relative;
     width: 80%;
-    padding: 2.5%;
+    padding: 3% 5% 5% 5%;
     border: 1px red solid;
     z-index: 100;
     top: 100px;
