@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4746857 */
+  src: url('iconfont.woff2?t=1731638157715') format('woff2'),
+       url('iconfont.woff?t=1731638157715') format('woff'),
+       url('iconfont.ttf?t=1731638157715') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shezhi:before {
+  content: "\e601";
+}
+
+.icon-yueliang1:before {
+  content: "\e610";
+}
+

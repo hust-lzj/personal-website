@@ -1,0 +1,113 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    padding: 1rem 0px;
+    color: white;
+    background-color: rgb(0, 40, 58);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+.navbar::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    height: 8px;
+    background-color: #00283a;
+    border-radius: 0% 0% 5px 5px;
+    opacity: 0.3;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li {
+    margin: 10px;
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.center-nav {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 滑动开关 */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2.4rem;
+    height: 1.1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* top,left,right,bottom设置为0让slider填满switch容器 */
+    background-color: #2196f3;
+    transition: 0.4s;
+    border-radius: 1.25rem;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.9rem;
+    width: 0.9rem;
+    left: 0.25rem;
+    bottom: 0.1rem;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    transform: translateX(1rem); /*默认在右边*/
+}
+.switch input[type="checkbox"] {
+    display: none;
+}
+/* 当checkbox被选中时 */
+.switch input[type="checkbox"]:checked + .slider {
+    background-color: #ccc;
+}
+.switch input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(0);
+}
+
+.white {
+    color: white;
+}
