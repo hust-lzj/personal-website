@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "@/components/Navbar";
 import BusinessCard from "./components/BusinessCard";
+import ContentCard from "./components/ContentCard";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -30,9 +31,26 @@ function App() {
                             <p>Hi My New Friend!</p>
                             <p>Hello</p>
                             <p>I`m Zhangjie Lv</p>
-                            <div className="navbtn">了解一下</div>
+                            <a className="navbtn" href="#content-board">
+                                了解一下
+                            </a>
                         </div>
-                        {/* <div className="content-board">内容板块</div> */}
+                        <div className="content-board" id="content-board">
+                            <div className="board1">
+                                <ContentCard
+                                    num="3"
+                                    name="完成的个人项目"
+                                ></ContentCard>
+                                <ContentCard
+                                    num="3"
+                                    name="完成的团队项目"
+                                ></ContentCard>
+                                <ContentCard
+                                    num="3"
+                                    name="获奖情况"
+                                ></ContentCard>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

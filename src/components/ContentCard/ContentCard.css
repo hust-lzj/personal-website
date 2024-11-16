@@ -1,0 +1,36 @@
+.back-card {
+    width: 13rem;
+    height: 12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00283a;
+    border-radius: 1rem;
+    position: relative;
+}
+.card-header {
+    width: 10rem;
+    height: 3rem;
+    background-color: #00283a;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: -0.5rem;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.nums {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.card-name {
+    font-size: 0.8rem;
+}
+
+.plus {
+    font-size: 1.25rem;
+    color: #ff8181;
+}

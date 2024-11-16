@@ -60,6 +60,8 @@
 }
 
 .hello-board .navbtn {
+    color: #ffffff;
+    text-decoration: none;
     margin-top: 1rem;
     position: relative;
     border: 0.1rem solid #ffffff;
@@ -85,10 +87,20 @@
 @keyframes bmove {
     0% {
         opacity: 1;
-        transform: translateX(-8px) translateY(-50%);
+        transform: translateX(-0.5rem) translateY(-50%);
     }
     100% {
         opacity: 0;
-        transform: translateX(5px) translateY(-50%);
+        transform: translateX(0.3rem) translateY(-50%);
     }
+}
+
+.content-board {
+    margin-top: 3rem;
+    border: 1px red solid;
+}
+
+.content-board .board1 {
+    display: flex;
+    justify-content: space-between;
 }
