@@ -36,4 +36,59 @@
     top: 100px;
     color: #ffffff;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-content {
+    width: 60%;
+    border: 1px red solid;
+}
+
+.hello-board {
+    margin-left: 0.5rem;
+}
+.hello-board p:not(:first-child) {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.hello-board p:first-child {
+    font-size: 0.8rem;
+    margin-top: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hello-board .navbtn {
+    margin-top: 1rem;
+    position: relative;
+    border: 0.1rem solid #ffffff;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.hello-board .navbtn::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 0.25rem solid transparent;
+    border-left: 0.5rem solid #ffffff;
+    border-bottom: 0.25rem solid transparent;
+    animation: bmove 1s infinite;
+}
+@keyframes bmove {
+    0% {
+        opacity: 1;
+        transform: translateX(-8px) translateY(-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(5px) translateY(-50%);
+    }
 }

@@ -25,6 +25,15 @@ function App() {
                         github="https://github.com/hust-lzj"
                         email="1721597041@qq.com"
                     ></BusinessCard>
+                    <div className="main-content">
+                        <div className="hello-board">
+                            <p>Hi My New Friend!</p>
+                            <p>Hello</p>
+                            <p>I`m Zhangjie Lv</p>
+                            <div className="navbtn">了解一下</div>
+                        </div>
+                        {/* <div className="content-board">内容板块</div> */}
+                    </div>
                 </div>
             </div>
         </>
