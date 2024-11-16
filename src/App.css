@@ -5,12 +5,12 @@
     letter-spacing: 2px;
 }
 
-.container {
+body {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: rgb(2, 22, 43);
-    overflow: hidden;
+    background-size: cover;
 }
 
 .pic-background {
@@ -19,7 +19,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
-    height: 80%;
+    height: 35rem;
     background-image: url("@/assets/images/back/bgpic.webp");
     background-size: cover;
     /* background-position: center; */
@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 1;
 }
 .main-content {
     width: 60%;
@@ -103,4 +104,57 @@
 .content-board .board1 {
     display: flex;
     justify-content: space-between;
+}
+
+.divider-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.divider-name {
+    font-weight: 900;
+}
+
+.my-story {
+    background-color: #00283a;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.blockquote {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: block;
+    unicode-bidi: isolate;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.my-story .blockquote ::before {
+    content: "“";
+    font-size: 3rem;
+    font-style: initial;
+    color: #ff8181;
+    position: absolute;
+    left: -7rem;
+    top: -2rem;
+}
+.my-story .blockquote ::after {
+    content: "“";
+    font-size: 3rem;
+    font-style: initial;
+    color: #ff8181;
+    position: absolute;
+    bottom: -3rem;
+    right: -5rem;
 }
