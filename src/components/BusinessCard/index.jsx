@@ -3,6 +3,7 @@ import "./BusinessCard.css";
 
 export default function BusinessCard({
     avatar = "",
+    name = "姓名",
     title = "这是网页的标题",
     signature = "这是你的签名",
     school = "这是你的学校",
@@ -16,7 +17,11 @@ export default function BusinessCard({
     return (
         <>
             <div className="card">
-                <img src={avatar} alt="Avatar" className="card-avatar" />
+                <div className="card-avatar">
+                    <img src={avatar} alt="Avatar" />
+                    <span className="name-box">{name}</span>
+                </div>
+
                 <p className="card-title">{title}</p>
                 <p className="card-signature">
                     <span>{signature}</span>

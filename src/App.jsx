@@ -14,6 +14,7 @@ function App() {
                 <div className="content">
                     <BusinessCard
                         avatar="/src/assets/images/avatar.jpg"
+                        name="吕张杰"
                         title="吕张杰的个人网站"
                         signature="天下没有远方，人间都是故乡"
                         school="华中科技大学"

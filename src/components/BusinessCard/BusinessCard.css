@@ -12,8 +12,35 @@
 .card-avatar {
     width: 6rem;
     height: 6rem;
-    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+.card-avatar img {
     border: 0.15rem #ffffff solid;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.name-box {
+    height: 1.5rem;
+    width: 1.5rem;
+    box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
+    border-radius: 0.75rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    position: absolute;
+    border: solid 3px #fcfcfe;
+    right: 0px;
+    bottom: 0px;
+    background-color: #ff8181;
+    overflow: hidden;
+    color: #fff;
+    transition: width 0.2s ease-in-out, visible 0.2s ease-in-out;
+}
+.card-avatar:hover .name-box {
+    width: 6rem;
+    visibility: visible;
 }
 
 .card-title {
