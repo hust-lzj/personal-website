@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "@/components/Navbar";
 import BusinessCard from "./components/BusinessCard";
 import ContentCard from "./components/ContentCard";
+import AbilityCard from "./components/AbilityCard";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -80,6 +81,14 @@ function App() {
                             loop
                             muted
                         ></video>
+                        <div className="divider-box">
+                            <div className="divider-name">我的能力</div>
+                            <div className="divider"></div>
+                            <div className="divider-name">03</div>
+                        </div>
+                        <div className="borad2">
+                            <AbilityCard></AbilityCard>
+                        </div>
                     </div>
                 </div>
             </div>
