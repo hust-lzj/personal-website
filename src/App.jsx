@@ -48,7 +48,7 @@ function App() {
                         </div>
                         <div className="divider-box">
                             <div className="divider-name">我的故事</div>
-                            <div className="divider divider-line"></div>
+                            <div className="divider"></div>
                             <div className="divider-name">01</div>
                         </div>
                         <div className="my-story">
@@ -62,6 +62,24 @@ function App() {
                                 </p>
                             </div>
                         </div>
+                        <div
+                            className="divider-box"
+                            style={{ marginBottom: "0.5rem" }}
+                        >
+                            <div className="divider-name">自驾318纪录片</div>
+                            <div className="divider"></div>
+                            <div className="divider-name">02</div>
+                        </div>
+                        <video
+                            preload="metadata"
+                            width="100%"
+                            height="400"
+                            src="/src/assets/images/自驾318.mp4"
+                            controls
+                            autoplay
+                            loop
+                            muted
+                        ></video>
                     </div>
                 </div>
             </div>
