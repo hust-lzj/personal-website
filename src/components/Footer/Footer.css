@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+}
+
+.footer .divider {
+    width: 100%;
+}
+
+.footer .footer-content {
+    width: 100%;
+    height: 5rem;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #7b7b7d;
+    text-transform: uppercase;
+    background-color: #00283a;
+}

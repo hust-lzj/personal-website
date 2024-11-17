@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import BusinessCard from "./components/BusinessCard";
 import ContentCard from "./components/ContentCard";
 import AbilityCard from "./components/AbilityCard";
+import Footer from "./components/Footer";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -116,6 +117,7 @@ function App() {
                                 content3="django"
                             ></AbilityCard>
                         </div>
+                        <Footer></Footer>
                     </div>
                 </div>
             </div>
