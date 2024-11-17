@@ -18,7 +18,7 @@ export default function BusinessCard({
         <>
             <div className="card sticky">
                 <div className="card-avatar">
-                    <img src={avatar} alt="Avatar" />
+                    <img src={avatar} />
                     <span className="name-box">{name}</span>
                 </div>
 
