@@ -16,8 +16,10 @@ function App() {
         "@/assets/images/自驾318.mp4",
         import.meta.url
     ).href;
-    const bgMusicUrl = new URL("@/assets/images/bgmusic.mp3", import.meta.url)
-        .href;
+    const bgMusicUrl = new URL(
+        "@/assets/images/bgmusic_min.mp3",
+        import.meta.url
+    ).href;
     return (
         <>
             <audio controls src={bgMusicUrl} className="bg-music">
