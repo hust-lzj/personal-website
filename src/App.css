@@ -20,7 +20,7 @@ body {
     transform: translateX(-50%);
     width: 95%;
     height: 35rem;
-    background-image: url("/src/assets/images/back/bgpic.webp");
+    background-image: url("@/assets/images/back/bgpic.webp");
     background-size: cover;
     /* background-position: center; */
     background-attachment: fixed;
