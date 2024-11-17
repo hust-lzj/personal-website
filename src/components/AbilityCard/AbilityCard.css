@@ -36,6 +36,7 @@
     font-size: 0.7rem;
     font-weight: 900;
     width: 7rem;
+    cursor: pointer;
 }
 
 .ability-btn::after {
