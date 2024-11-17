@@ -53,7 +53,7 @@ function App() {
                                 num="3"
                                 name="完成的团队项目"
                             ></ContentCard>
-                            <ContentCard num="3" name="获奖情况"></ContentCard>
+                            <ContentCard num="5" name="获奖情况"></ContentCard>
                         </div>
                         <div className="divider-box">
                             <div className="divider-name">我的故事</div>
