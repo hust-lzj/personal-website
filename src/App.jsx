@@ -86,8 +86,35 @@ function App() {
                             <div className="divider"></div>
                             <div className="divider-name">03</div>
                         </div>
-                        <div className="borad2">
-                            <AbilityCard></AbilityCard>
+                        <div className="board2">
+                            <AbilityCard
+                                icon="icon-cloud-service"
+                                name="UI设计"
+                                content1="UI排版"
+                                content2="响应式页面"
+                                content3="静态页面、动画效果"
+                            ></AbilityCard>
+                            <AbilityCard
+                                icon="icon-qianduan1"
+                                name="网页制作"
+                                content1="HTML、JS、css、TS"
+                                content2="JS交互"
+                                content3="AJAX数据渲染"
+                            ></AbilityCard>
+                            <AbilityCard
+                                icon="icon-kuangjiaguanli2"
+                                name="前端框架"
+                                content1="vue框架"
+                                content2="react框架"
+                                content3="微信小程序"
+                            ></AbilityCard>
+                            <AbilityCard
+                                icon="icon-qianduan"
+                                name="后端"
+                                content1="nodejs+mysql"
+                                content2="koa"
+                                content3="django"
+                            ></AbilityCard>
                         </div>
                     </div>
                 </div>

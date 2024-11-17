@@ -1,0 +1,62 @@
+.ability-card {
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 18rem;
+    height: 15rem;
+    background-color: #00283a;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.ability-icon {
+    font-size: 2rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.ability-name {
+    font-weight: 900;
+    font-size: 0.9rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.ability-content {
+    font-size: 0.8rem;
+    color: #7b7b7d;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.ability-btn {
+    position: relative;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #ff8181;
+    font-size: 0.7rem;
+    font-weight: 900;
+    width: 7rem;
+}
+
+.ability-btn::after {
+    position: absolute;
+    right: 0rem;
+    top: 50%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 0.25rem solid transparent;
+    border-left: 0.5rem solid #ff8181;
+    border-bottom: 0.25rem solid transparent;
+    animation: bmove 1s infinite;
+}
+@keyframes bmove {
+    0% {
+        opacity: 1;
+        transform: translateX(-0.5rem) translateY(-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0.3rem) translateY(-50%);
+    }
+}
