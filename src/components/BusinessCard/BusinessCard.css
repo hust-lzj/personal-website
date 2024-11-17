@@ -1,6 +1,5 @@
 .card {
     height: 100vh;
-    /* bottom: 0; */
     width: 25vw;
     background-color: rgb(0, 40, 58);
     display: flex;
@@ -8,6 +7,12 @@
     padding-top: 40px;
     align-items: center;
     border-radius: 0.5rem;
+}
+/* 让该板块随页面滚动一起滚动 */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
 }
 
 .card-avatar {

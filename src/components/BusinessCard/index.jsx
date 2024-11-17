@@ -16,7 +16,7 @@ export default function BusinessCard({
 }) {
     return (
         <>
-            <div className="card">
+            <div className="card sticky">
                 <div className="card-avatar">
                     <img src={avatar} alt="Avatar" />
                     <span className="name-box">{name}</span>
