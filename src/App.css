@@ -13,6 +13,16 @@ body {
     background-size: cover;
 }
 
+.bg-music {
+    position: fixed;
+    bottom: 10px;
+    right: -13.25rem;
+    z-index: 100;
+    transition: 0.25s;
+}
+.bg-music:hover {
+    right: 0;
+}
 .pic-background {
     position: absolute;
     top: 0;

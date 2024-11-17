@@ -16,8 +16,13 @@ function App() {
         "@/assets/images/自驾318.mp4",
         import.meta.url
     ).href;
+    const bgMusicUrl = new URL("@/assets/images/bgmusic.mp3", import.meta.url)
+        .href;
     return (
         <>
+            <audio controls src={bgMusicUrl} className="bg-music">
+                您的浏览器不支持音频播放。
+            </audio>
             <div className="pic-background"></div>
             <Navbar></Navbar>
             <div className="content">
