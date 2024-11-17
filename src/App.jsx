@@ -8,15 +8,21 @@ import Footer from "./components/Footer";
 
 function App() {
     const [count, setCount] = useState(0);
-    const imageUrl = new URL("./assets/images/avatar.jpg", import.meta.url)
-        .href;
+    const avatarImageUrl = new URL(
+        "@/assets/images/avatar.jpg",
+        import.meta.url
+    ).href;
+    const selfDrivingVideoUrl = new URL(
+        "@/assets/images/自驾318.mp4",
+        import.meta.url
+    ).href;
     return (
         <>
             <div className="pic-background"></div>
             <Navbar></Navbar>
             <div className="content">
                 <BusinessCard
-                    avatar={imageUrl}
+                    avatar={avatarImageUrl}
                     name="吕张杰"
                     title="吕张杰的个人网站"
                     signature="天下没有远方，人间都是故乡"
@@ -77,9 +83,9 @@ function App() {
                             preload="metadata"
                             width="100%"
                             height="400"
-                            src="/src/assets/images/自驾318.mp4"
+                            src={selfDrivingVideoUrl}
                             controls
-                            autoplay
+                            autoPlay
                             loop
                             muted
                         ></video>
