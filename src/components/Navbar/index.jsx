@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import "@/assets/icons/iconfont.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const logoImageUrl = new URL("@/assets/logo.png", import.meta.url).href;
@@ -16,21 +17,21 @@ export default function Navbar() {
                         />
                         <h3>个人主页</h3>
                     </div>
-                    <ul className="nav-links">
+                    <nav className="nav-links">
                         <li>
-                            <a href="/">主页</a>
+                            <Link to="/">主页</Link>
                         </li>
                         <li>
-                            <a href="/project">项目</a>
+                            <Link to="/project">项目</Link>
                         </li>
                         <li>
-                            <a href="/experience">经验</a>
+                            <Link to="/experience">经验</Link>
                         </li>
                         <li>
-                            <a href="/contact">联系</a>
+                            <Link to="/contact">联系</Link>
                         </li>
                         <li>
-                            <a href="/other">其他</a>
+                            <Link to="/other">其他</Link>
                         </li>
                         <li className="setting">
                             <span className="iconfont icon-shezhi"></span>
@@ -43,7 +44,7 @@ export default function Navbar() {
                             </div>
                             <span className="iconfont icon-yueliang1 white"></span>
                         </li>
-                    </ul>
+                    </nav>
                 </div>
             </nav>
         </>
