@@ -18,9 +18,10 @@
     margin-top: 1rem;
     position: relative;
     border: 0.1rem solid #ffffff;
-    width: 8rem;
+    display: inline-block;
+    width: auto;
     height: 2rem;
-    display: flex;
+    padding: 0.25rem 2rem 0.25rem 1.25rem;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
