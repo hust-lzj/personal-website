@@ -8,6 +8,10 @@ export default function Home() {
         "@/assets/images/自驾318.mp4",
         import.meta.url
     ).href;
+    const videoCoverUrl = new URL(
+        "@/assets/images/videocover.jpg",
+        import.meta.url
+    ).href;
     return (
         <>
             <div className="hello-board">
@@ -38,7 +42,7 @@ export default function Home() {
                     height="400"
                     src={selfDrivingVideoUrl}
                     controls
-                    autoPlay
+                    poster={videoCoverUrl}
                     loop
                     muted
                 ></video>

@@ -24,7 +24,12 @@ function App() {
     return (
         <>
             <BrowserRouter>
-                <audio controls src={bgMusicUrl} className="bg-music">
+                <audio
+                    controls
+                    src={bgMusicUrl}
+                    className="bg-music"
+                    preload="none"
+                >
                     您的浏览器不支持音频播放。
                 </audio>
                 <div className="pic-background"></div>
