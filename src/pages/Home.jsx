@@ -33,7 +33,7 @@ export default function Home() {
                 </div>
                 <Divider title="自驾318纪录片" num="02"></Divider>
                 <video
-                    preload="metadata"
+                    preload="none"
                     width="100%"
                     height="400"
                     src={selfDrivingVideoUrl}
