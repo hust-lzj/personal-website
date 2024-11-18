@@ -44,7 +44,6 @@ export default function Home() {
                     poster={videoCoverUrl}
                     controls
                     loop
-                    muted
                 ></video>
                 <Divider title="我的能力" num="03"></Divider>
                 <div className="board2">
