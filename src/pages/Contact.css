@@ -39,6 +39,7 @@
 
 .email-box {
     width: 100%;
+    padding: 1rem 0;
     position: relative;
     background-color: #00283a;
     border-radius: 1rem;
@@ -51,7 +52,7 @@
     height: 2rem;
     padding: 0.5rem;
     padding-left: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 90%;

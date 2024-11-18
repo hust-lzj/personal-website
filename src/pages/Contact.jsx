@@ -31,7 +31,7 @@ export default function Contact() {
                 </div>
                 <Divider title="联系我" num="02"></Divider>
                 <div className="email-box">
-                    <input type="text" placeholder="收件人" />
+                    <input type="text" placeholder="你的联系方式" />
                     <input type="text" placeholder="主题" />
                     <textarea placeholder="邮件内容"></textarea>
                     <button type="submit" onClick={sendMessage}>
