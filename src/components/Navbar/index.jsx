@@ -3,13 +3,17 @@ import "./Navbar.css";
 import "@/assets/icons/iconfont.css";
 
 export default function Navbar() {
-    const logoImageUrl = new URL("@/assets/react.svg", import.meta.url).href;
+    const logoImageUrl = new URL("@/assets/logo.png", import.meta.url).href;
     return (
         <>
             <nav className="navbar">
                 <div className="center-nav">
                     <div className="navbar-logo">
-                        <img src={logoImageUrl} alt="Logo" />
+                        <img
+                            src={logoImageUrl}
+                            alt="Logo"
+                            className="logo-pic"
+                        />
                         <h3>个人主页</h3>
                     </div>
                     <ul className="nav-links">

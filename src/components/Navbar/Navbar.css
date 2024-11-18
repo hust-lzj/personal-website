@@ -28,6 +28,9 @@
     align-items: center;
     width: 10rem;
 }
+.logo-pic {
+    width: 3rem;
+}
 
 .nav-links {
     display: flex;
