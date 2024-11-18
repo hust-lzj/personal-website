@@ -107,3 +107,7 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+video[poster] {
+    object-fit: cover;
+}

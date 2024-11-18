@@ -41,8 +41,8 @@ export default function Home() {
                     width="100%"
                     height="400"
                     src={selfDrivingVideoUrl}
-                    controls
                     poster={videoCoverUrl}
+                    controls
                     loop
                     muted
                 ></video>
