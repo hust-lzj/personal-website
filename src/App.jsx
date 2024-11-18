@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import BusinessCard from "@/components/BusinessCard";
+import Footer from "@/components/Footer";
 import Home from "@/pages/Home";
 import Project from "@/pages/Project";
 import Experience from "@/pages/Experience";
@@ -53,6 +54,7 @@ function App() {
                             <Route path="/contact" element={<Contact />} />
                             <Route path="/other" element={<Other />} />
                         </Routes>
+                        <Footer></Footer>
                     </div>
                 </div>
             </BrowserRouter>

@@ -2,6 +2,13 @@
     width: 100%;
 }
 
+.divider {
+    width: 80%;
+    border-top: 1px dashed #b7b6b6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .footer .divider {
     width: 100%;
 }

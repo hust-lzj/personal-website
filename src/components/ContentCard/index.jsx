@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContentCard.css";
+import "@/components/ContentCard/ContentCard.css";
 
 export default function ContentCard({ num = "0", name = "xxxxx" }) {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./AbilityCard.css";
+import "@/components/AbilityCard/AbilityCard.css";
 
 export default function AbilityCard({
     icon = "",

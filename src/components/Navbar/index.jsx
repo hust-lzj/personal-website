@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "@/components/Navbar/Navbar.css";
 import "@/assets/icons/iconfont.css";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ export default function Navbar() {
                             alt="Logo"
                             className="logo-pic"
                         />
-                        <h3>个人主页</h3>
+                        <h3>个人网站</h3>
                     </div>
                     <nav className="nav-links">
                         <li>

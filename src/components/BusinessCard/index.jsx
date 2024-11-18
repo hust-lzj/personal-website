@@ -1,5 +1,5 @@
 import React from "react";
-import "./BusinessCard.css";
+import "@/components/BusinessCard/BusinessCard.css";
 
 export default function BusinessCard({
     avatar = "",

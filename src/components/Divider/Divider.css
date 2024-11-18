@@ -1,0 +1,26 @@
+.divider-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+.divider-name {
+    font-weight: 900;
+    white-space: nowrap;
+}
+.divider-box .divider {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-top: 1px dashed #b7b6b6;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.divider {
+    width: 80%;
+    border-top: 1px dashed #b7b6b6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

@@ -57,27 +57,6 @@
     justify-content: space-between;
 }
 
-.divider-box {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-}
-.divider-name {
-    font-weight: 900;
-    white-space: nowrap;
-}
-.divider-box .divider {
-    margin-right: 1rem;
-    margin-left: 1rem;
-    border-top: 1px dashed #b7b6b6;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .my-story {
     background-color: #00283a;
     width: 100%;
@@ -87,6 +66,7 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+    border-radius: 0.5rem;
 }
 
 .blockquote {
