@@ -1,7 +1,7 @@
 .contact-board {
     padding-top: 6rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
