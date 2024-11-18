@@ -13,7 +13,7 @@ import Other from "@/pages/Other";
 function App() {
     const [count, setCount] = useState(0);
     const avatarImageUrl = new URL(
-        "@/assets/images/avatar.jpg",
+        "@/assets/images/avatar_min_min.jpg",
         import.meta.url
     ).href;
 
