@@ -1,0 +1,71 @@
+.contact-board {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 18rem;
+    height: 12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #00283a;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.contact-card .card-header {
+    width: 16rem;
+}
+
+.contact-card .iconfont {
+    font-size: 2.5rem;
+}
+
+.contact-way {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-num {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.email-box {
+    width: 100%;
+    position: relative;
+    background-color: #00283a;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-box > * {
+    height: 2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.email-box > textarea {
+    height: 5rem;
+}
+
+.email-box > button {
+    width: 25%;
+    padding: 0;
+    background-color: #ff8181;
+    color: #ffffff;
+    font-weight: 900;
+    border: 0;
+}
