@@ -4,8 +4,8 @@ import "@/pages/Other.css";
 
 export default function Other() {
     const pic1Url = new URL("@/assets/images/pic1.jpg", import.meta.url).href;
-    const pic2Url = new URL("@/assets/images/pic2.jpeg", import.meta.url).href;
-    const pic3Url = new URL("@/assets/images/pic3.jpeg", import.meta.url).href;
+    const pic2Url = new URL("@/assets/images/pic2.jpg", import.meta.url).href;
+    const pic3Url = new URL("@/assets/images/pic3.jpg", import.meta.url).href;
     const pic4Url = new URL("@/assets/images/pic4.jpg", import.meta.url).href;
     const pic5Url = new URL("@/assets/images/pic5.jpg", import.meta.url).href;
     const pic6Url = new URL("@/assets/images/pic6.jpg", import.meta.url).href;
