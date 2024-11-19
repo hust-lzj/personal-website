@@ -1,0 +1,35 @@
+.content-board .skill-board1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-board2 {
+    display: flex;
+    background-color: #00283a;
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-left: 3.5rem;
+    flex-wrap: wrap;
+    list-style-type: none; /* 移除默认的点样式 */
+}
+.skill-board2 li {
+    position: relative;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex: auto;
+}
+
+.skill-board2 li::before {
+    content: ""; /* 使用Unicode字符表示圆点 */
+    background-color: #00283a; /* 自定义点的颜色 */
+    border: 0.2rem solid #ff8181;
+    width: 0.4rem; /* 自定义点的大小 */
+    height: 0.4rem;
+    border-radius: 50%; /* 使点成为圆形 */
+    position: absolute; /* 使点成为绝对定位 */
+    top: 0.25rem;
+    left: -1.5rem;
+}
