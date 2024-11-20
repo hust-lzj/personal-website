@@ -18,11 +18,19 @@ export default function Navbar() {
                 root.style.setProperty("--dark-bg", "#f4f5f7");
                 root.style.setProperty("--dark-main-color", "#ffffff");
                 root.style.setProperty("--font-color", "#00283a");
+                root.style.setProperty(
+                    "--bgpic-url",
+                    'url("/src/assets/images/back/light-bgpic.jpg")'
+                );
             } else {
                 // 切换到暗色模式
                 root.style.setProperty("--dark-bg", "#02162b");
                 root.style.setProperty("--dark-main-color", "#00283a");
                 root.style.setProperty("--font-color", "#ffffff");
+                root.style.setProperty(
+                    "--bgpic-url",
+                    'url("/src/assets/images/back/bgpic.jpg")'
+                );
             }
         };
 
