@@ -10,7 +10,7 @@ export default function Navbar() {
         import.meta.url
     ).href;
     const bgImageUrl2 = new URL(
-        "@/assets/images/back/light-bgpic2.jpg",
+        "@/assets/images/back/light-bgpic.jpg",
         import.meta.url
     ).href;
 
