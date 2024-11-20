@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -21,6 +21,13 @@ function App() {
         "@/assets/images/bgmusic_min.mp3",
         import.meta.url
     ).href;
+    useEffect(() => {
+        const body = document.body;
+        body.classList.add("global-transition");
+        return () => {
+            body.classList.remove("global-transition");
+        };
+    }, []);
     return (
         <>
             <BrowserRouter>

@@ -1,7 +1,7 @@
 .card {
     height: 100vh;
     width: 22vw;
-    background-color: rgb(0, 40, 58);
+    background-color: var(--dark-main-color);
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -31,7 +31,6 @@
 .name-box {
     height: 1.5rem;
     width: 1.5rem;
-    box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
     border-radius: 0.75rem;
     text-align: center;
     font-size: 0.9rem;
@@ -40,7 +39,7 @@
     border: solid 3px #fcfcfe;
     right: 0px;
     bottom: 0px;
-    background-color: #ff8181;
+    background-color: var(--main-color);
     overflow: hidden;
     color: #fff;
     transition: width 0.2s ease-in-out, visible 0.2s ease-in-out;
@@ -63,7 +62,7 @@
     text-align: center;
 }
 .card-signature span {
-    border-right: 0.08em solid #ffffff;
+    border-right: 0.08em solid var(--font-color);
     width: 28ch;
     display: block;
     white-space: nowrap;
@@ -96,7 +95,7 @@
 }
 
 .card-contact {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 100;
@@ -116,7 +115,7 @@
 }
 
 .contact-me {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 0.9rem;
     width: 200px;
@@ -126,7 +125,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #ff8181 50%, #fff 60%, #ff8181 70%);
+    background: linear-gradient(
+        -45deg,
+        var(--main-color) 50%,
+        #fff 60%,
+        var(--main-color) 70%
+    );
     /* 把渐变背景横向拉长，中间一个白条渐变，然后在 x 轴方向上移动 */
     background-size: 400% 100%;
     animation: shine 2.5s infinite;

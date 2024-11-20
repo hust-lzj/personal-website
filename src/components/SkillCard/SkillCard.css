@@ -4,7 +4,7 @@
     padding: 1.25rem;
     width: 20rem;
     height: 12rem;
-    background-color: #00283a;
+    background-color: var(--dark-main-color);
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     display: flex;
@@ -12,9 +12,9 @@
     align-items: center;
 }
 .skill-card .card-header {
-    width: 17.5rem;
+    width: 85%;
     height: 3rem;
-    background-color: #00283a;
+    background-color: var(--dark-main-color);
     border-radius: 0.25rem;
     position: absolute;
     top: -0.5rem;
@@ -47,5 +47,5 @@
 .skill-percent {
     height: 0.25rem;
     border-radius: 0.125rem;
-    background-color: #ff8181;
+    background-color: var(--main-color);
 }

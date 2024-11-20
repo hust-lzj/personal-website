@@ -22,5 +22,5 @@
     font-weight: 900;
     color: #7b7b7d;
     text-transform: uppercase;
-    background-color: #00283a;
+    background-color: var(--dark-main-color);
 }

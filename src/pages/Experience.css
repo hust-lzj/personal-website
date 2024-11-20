@@ -6,7 +6,7 @@
 
 .skill-board2 {
     display: flex;
-    background-color: #00283a;
+    background-color: var(--dark-main-color);
     border-radius: 1rem;
     padding: 2rem;
     padding-left: 3.5rem;
@@ -23,13 +23,13 @@
 }
 
 .skill-board2 li::before {
-    content: ""; /* 使用Unicode字符表示圆点 */
-    background-color: #00283a; /* 自定义点的颜色 */
-    border: 0.2rem solid #ff8181;
+    content: "";
+    background-color: var(--dark-main-color);
+    border: 0.2rem solid var(--main-color);
     width: 0.4rem; /* 自定义点的大小 */
     height: 0.4rem;
     border-radius: 50%; /* 使点成为圆形 */
-    position: absolute; /* 使点成为绝对定位 */
+    position: absolute;
     top: 0.25rem;
     left: -1.5rem;
 }

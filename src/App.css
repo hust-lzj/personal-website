@@ -4,13 +4,28 @@
     box-sizing: border-box;
     letter-spacing: 2px;
 }
+:root {
+    --main-color: #ff8181;
+    --dark-bg: #02162b;
+    --dark-main-color: #00283a;
+    --light-bg: #f4f5f7;
+    --light-main-color: #ffffff;
+    --font-color: #ffffff;
+}
 
 body {
     position: relative;
     width: 100%;
     height: auto;
-    background-color: rgb(2, 22, 43);
+    background-color: var(--dark-bg);
     background-size: cover;
+    color: var(--font-color);
+    /* transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out; */
+}
+
+.global-transition {
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+        box-shadow 0.4s ease-in-out;
 }
 
 .bg-music {
@@ -43,7 +58,6 @@ body {
     padding: 3% 5% 5% 5%;
     z-index: 100;
     top: 100px;
-    color: #ffffff;
     margin: auto;
     display: flex;
     flex-direction: row;
