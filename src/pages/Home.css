@@ -78,7 +78,7 @@
     margin: 0;
     display: block;
     unicode-bidi: isolate;
-    color: #ffffff;
+    color: var(--font-color);
     font-style: italic;
     font-size: 1rem;
     font-weight: 500;
