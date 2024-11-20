@@ -5,6 +5,14 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
     const logoImageUrl = new URL("@/assets/logo.png", import.meta.url).href;
+    const bgImageUrl1 = new URL(
+        "@/assets/images/back/bgpic.jpg",
+        import.meta.url
+    ).href;
+    const bgImageUrl2 = new URL(
+        "@/assets/images/back/light-bgpic2.jpg",
+        import.meta.url
+    ).href;
 
     const switchCheckboxRef = useRef(null);
 
@@ -18,19 +26,13 @@ export default function Navbar() {
                 root.style.setProperty("--dark-bg", "#f4f5f7");
                 root.style.setProperty("--dark-main-color", "#ffffff");
                 root.style.setProperty("--font-color", "#00283a");
-                root.style.setProperty(
-                    "--bgpic-url",
-                    'url("/src/assets/images/back/light-bgpic.jpg")'
-                );
+                root.style.setProperty("--bgpic-url", `url("${bgImageUrl2}")`);
             } else {
                 // 切换到暗色模式
                 root.style.setProperty("--dark-bg", "#02162b");
                 root.style.setProperty("--dark-main-color", "#00283a");
                 root.style.setProperty("--font-color", "#ffffff");
-                root.style.setProperty(
-                    "--bgpic-url",
-                    'url("/src/assets/images/back/bgpic.jpg")'
-                );
+                root.style.setProperty("--bgpic-url", `url("${bgImageUrl1}")`);
             }
         };
 
