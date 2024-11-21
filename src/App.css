@@ -63,8 +63,34 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     z-index: 1;
 }
 .main-content {
     width: 45vw;
+}
+
+.left-card {
+    width: 22vw;
+}
+@media screen and (max-width: 1200px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-content {
+        width: 80%;
+    }
+    .left-card {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .hello-board {
+        display: none;
+    }
+    /* .sticky {
+        position: relative;
+    } */
 }

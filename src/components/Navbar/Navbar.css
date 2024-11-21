@@ -132,3 +132,67 @@
 .white {
     color: var(--font-color);
 }
+
+.mobile-setting {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-caidan {
+    display: none;
+    position: relative;
+}
+.menu-bar {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    top: 2rem;
+    width: 6rem;
+    border-radius: 0.5rem;
+    background-color: var(--dark-main-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 15%);
+}
+.menu-bar li a {
+    color: var(--font-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0.25rem;
+    padding-left: 1rem;
+}
+.icon-caidan input[type="checkbox"] {
+    display: none;
+}
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.icon-caidan input[type="checkbox"]:checked + label + .menu-bar {
+    display: none;
+}
+.icon-caidan input[type="checkbox"]:checked + label + .menu-bar {
+    display: flex;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-logo h3 {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+    .icon-caidan {
+        display: flex;
+    }
+    .mobile-setting {
+        display: flex;
+    }
+}

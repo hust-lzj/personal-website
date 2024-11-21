@@ -15,13 +15,17 @@ export default function Navbar() {
     ).href;
 
     const switchCheckboxRef = useRef(null);
+    const mobileSwitchCheckboxRef = useRef(null);
 
     useEffect(() => {
         const switchCheckbox = switchCheckboxRef.current;
+        const mobileSwitchCheckbox = mobileSwitchCheckboxRef.current;
         const root = document.documentElement;
 
-        const handleChange = () => {
-            if (switchCheckbox.checked) {
+        const handleChange = (scb1, scb2) => {
+            scb2.checked = scb1.checked;
+
+            if (scb1.checked) {
                 // 切换到亮色模式
                 root.style.setProperty("--dark-bg", "#f4f5f7");
                 root.style.setProperty("--dark-main-color", "#ffffff");
@@ -36,10 +40,19 @@ export default function Navbar() {
             }
         };
 
-        switchCheckbox.addEventListener("change", handleChange);
-
+        switchCheckbox.addEventListener("change", () => {
+            handleChange(switchCheckbox, mobileSwitchCheckbox);
+        });
+        mobileSwitchCheckbox.addEventListener("change", () => {
+            handleChange(mobileSwitchCheckbox, switchCheckbox);
+        });
         return () => {
-            switchCheckbox.removeEventListener("change", handleChange);
+            switchCheckbox.removeEventListener("change", () => {
+                handleChange(switchCheckbox, mobileSwitchCheckbox);
+            });
+            mobileSwitchCheckbox.removeEventListener("change", () => {
+                handleChange(mobileSwitchCheckbox, switchCheckbox);
+            });
         };
     }, []);
 
@@ -109,6 +122,45 @@ export default function Navbar() {
                             <span className="iconfont icon-yueliang1 white"></span>
                         </li>
                     </nav>
+                    <div className="iconfont icon-caidan">
+                        <input type="checkbox" id="menu-checkbox" />
+                        <label
+                            htmlFor="menu-checkbox"
+                            className="menu-btn"
+                        ></label>
+                        <nav className="menu-bar">
+                            <li>
+                                <Link to="/">主页</Link>
+                            </li>
+                            <li>
+                                <Link to="/project">项目</Link>
+                            </li>
+                            <li>
+                                <Link to="/experience">经验</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">联系</Link>
+                            </li>
+                            <li>
+                                <Link to="/other">其他</Link>
+                            </li>
+                        </nav>
+                    </div>
+                    <div className="mobile-setting">
+                        <span className="iconfont icon-shezhi"></span>
+                        <div className="switch">
+                            <input
+                                type="checkbox"
+                                id="mobile-switch-checkbox"
+                                ref={mobileSwitchCheckboxRef}
+                            />
+                            <label
+                                htmlFor="mobile-switch-checkbox"
+                                className="slider"
+                            ></label>
+                        </div>
+                        <span className="iconfont icon-yueliang1 white"></span>
+                    </div>
                 </div>
             </nav>
         </>

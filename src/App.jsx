@@ -42,19 +42,22 @@ function App() {
                 <div className="pic-background"></div>
                 <Navbar></Navbar>
                 <div className="content">
-                    <BusinessCard
-                        avatar={avatarImageUrl}
-                        name="吕张杰"
-                        title="吕张杰的个人网站"
-                        signature="天下没有远方，人间都是故乡"
-                        school="华中科技大学"
-                        grade="25届应届生"
-                        address="湖北 武汉"
-                        qq="1721597041"
-                        wechat="wx_70417041"
-                        github="https://github.com/hust-lzj"
-                        email="1721597041@qq.com"
-                    ></BusinessCard>
+                    <div className="left-card">
+                        <BusinessCard
+                            avatar={avatarImageUrl}
+                            name="吕张杰"
+                            title="吕张杰的个人网站"
+                            signature="天下没有远方，人间都是故乡"
+                            school="华中科技大学"
+                            grade="25届应届生"
+                            address="湖北 武汉"
+                            qq="1721597041"
+                            wechat="wx_70417041"
+                            github="https://github.com/hust-lzj"
+                            email="1721597041@qq.com"
+                        ></BusinessCard>
+                    </div>
+
                     <div className="main-content">
                         <Routes>
                             <Route path="/" element={<Home />} />
