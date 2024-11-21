@@ -8,6 +8,7 @@
     align-items: center;
     border-radius: 0.5rem;
 }
+
 /* 让该板块随页面滚动一起滚动 */
 .sticky {
     position: -webkit-sticky;
@@ -142,5 +143,12 @@
     }
     100% {
         background-position-x: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: auto;
+        padding-bottom: 2rem;
     }
 }
